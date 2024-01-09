@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const OuterDiv = styled.div`
   padding-top: 80px;
   padding-left: 40px;
@@ -66,7 +66,7 @@ const LoginForm = () => {
 
         <AccountContainer>
           <ATag href="#">이메일 찾기</ATag> | 
-          <ATag href="#">비밀번호 찾기</ATag> |
+          <Link to="/pw">비밀번호 찾기</Link> |
           <ATag href="#">회원가입</ATag>
         </AccountContainer>
         <p>SNS 계정으로 로그인</p>
