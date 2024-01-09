@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import LoginHeader from "./login/LoginHeader";
 import LoginButton from "./login/LoginButton";
@@ -22,8 +23,11 @@ const Input = styled.input`
 `;
 
 
+
 const LoginForm = () => {
   return (
+
+
     <OuterDiv>
       <LoginHeader />
 
@@ -48,4 +52,5 @@ const LoginForm = () => {
   )
 }
 
-export default LoginForm;
+export default LoginForm
+export {OuterDiv, Input, Button}
