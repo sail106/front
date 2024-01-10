@@ -1,6 +1,8 @@
+import SignupHeader from "./signup/SignupHeader"
+
 const SignupForm = () => {
   return (
-    <p>Signup</p>
+    <SignupHeader />
   )
 }
 
