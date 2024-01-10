@@ -53,4 +53,3 @@ const LoginForm = () => {
 }
 
 export default LoginForm
-export {OuterDiv, Input, Button}
