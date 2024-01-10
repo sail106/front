@@ -44,7 +44,7 @@ const LoginForm = () => {
         <LoginButton>로그인</LoginButton>
       </form>
 
-      <AccountManage />
+      <AccountManage></AccountManage>
       <SnsManage />
 
     </OuterDiv>
