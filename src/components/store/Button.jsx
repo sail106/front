@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
+
 export const ButtonBox = styled.button`
-  border: 1px solid #E66F75;
-  background-color: #E66F75;
+  border: 1px solid #F28482;
+  background-color: #F28482;
   border-radius: 6px;
   width: ${props => props.width || '520px'};
   padding-top: 15px;
@@ -12,7 +13,7 @@ export const ButtonBox = styled.button`
   font-size: medium;
   font-weight: bold;
   &:hover {
-    background-color: #c94d53;
+    opacity: 0.7;
     cursor: pointer;
   }
 `;
