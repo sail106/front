@@ -4,7 +4,7 @@ const ButtonBox = styled.button`
   border: 1px solid #E66F75;
   background-color: #E66F75;
   border-radius: 6px;
-  width: 520px;
+  width: ${props => props.width || '520px'};
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 10px;
@@ -17,9 +17,9 @@ const ButtonBox = styled.button`
   }
 `;
 
-const Button = () => {
+const Button = (props) => {
   return (
-    <ButtonBox>로그인</ButtonBox>
+    <ButtonBox width={props.width} >{props.children}</ButtonBox>
   )
 }
 
