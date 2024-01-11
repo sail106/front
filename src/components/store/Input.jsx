@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const InputBox = styled.input`
+export const InputBox = styled.input`
   border: 1px solid gray;
   border-radius: 6px;
   width: ${props => props.width || '500px'};
