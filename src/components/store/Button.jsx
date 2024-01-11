@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ButtonBox = styled.button`
+export const ButtonBox = styled.button`
   border: 1px solid #E66F75;
   background-color: #E66F75;
   border-radius: 6px;
