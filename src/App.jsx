@@ -5,19 +5,22 @@ import LoginForm from './components/LoginForm'
 import PasswordFindForm from './components/PasswordFindForm';
 import SpinnerTest from './components/SpinnerTest';
 import SignupForm from "./components/SignupForm";
-import Card from "./components/store/Card";
-
+import MainPage from "./components/MainPage";
+import { Page } from "./components/store/Page";
+import MyInfo from './components/MyInfo';
 function App() {
 
   return (
-    <Card>
+    <Page>
       <Routes>
-        <Route path='/' element={<LoginForm />} />
+        <Route path='/' element={<MainPage />} />
+        <Route path='/login' element={<LoginForm />} />
         <Route path='/pw' element={<PasswordFindForm />} />
         <Route path='/test' element={<SpinnerTest />} />
+        <Route path='/signup' element={<SignupForm />} />
+        <Route path='/mypage' element={<MyInfo />} />
       </Routes>
-      <SignupForm />
-    </Card>
+    </Page>
   );
 }
 
