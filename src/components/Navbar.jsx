@@ -4,11 +4,10 @@ const NavBox = styled.nav`
   position: fixed;
   width: 100%;
   z-index: 3;
-  height: 150px;
+  height: 160px;
   background: #FFE9E3;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   letter-spacing: 1px;
   top: 0;
 `;
@@ -33,10 +32,20 @@ const NavMenu = styled.div`
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+  padding-top: 50px;
 `;
 
-const NavInfo = styled.div`
-  
+const NavInfoLogo = styled.div`
+  padding-top: 50px;
+  padding-right: 100px;
+  img {
+    /* border: 1px solid black; */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* img:hover {
+    content: url("src/assets/pinkCartIcon.svg");
+  } */
 `;
 
 const Navbar = () => {
@@ -48,13 +57,18 @@ const Navbar = () => {
       <NavMenu>
         <Link to={'/'}>Home</Link>
         <Link to={'/pw'}>Consulting</Link>
-        <Link to={'/pw'}>Community</Link>
-        <Link to={'/pw'}>Contents</Link>
-        <Link to={'/pw'}>FAQ</Link>
+        <Link to={'#'}>Community</Link>
+        <Link to={'#'}>Contents</Link>
+        <Link to={'#'}>FAQ</Link>
       </NavMenu>
-      <NavInfo>
-        
-      </NavInfo>
+      <NavInfoLogo>
+        <Link to={'/'}>
+          <img src="src\assets\cartIcon.svg" alt="cart" />
+        </Link>
+        <Link to={'/'}>
+          <img src="src\assets\userIcon.svg" alt="user" />
+        </Link>
+      </NavInfoLogo>
     </NavBox>
   )
 }

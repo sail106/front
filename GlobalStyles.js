@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
-    padding-top: 150px;
+    padding-top: 160px;
   }
   button {
     border: 0;
